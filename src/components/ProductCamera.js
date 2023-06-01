@@ -19,11 +19,12 @@ import PrevBanner from "../components/PrevBanner";
 import NextBanner from "../components/NextBanner";
 
 function ProductCamera() {
-    const nameProducts = ["IQ 2S", "IQ 2", "IQ 3"];
+    const nameProducts = ["IQ 2S", "IQ 2", "IQ 3", "Camera Play"];
     const priceCameras = [
         { main: "1.000.000đ", sub: "1.400.000đ" },
         { main: "900.000đ", sub: "1.300.000đ" },
         { main: "1.890.000đ", sub: "2.500.000đ" },
+        { main: "1.600.000đ", sub: "2.130.000đ" },
     ];
 
     const settings = {
@@ -135,7 +136,7 @@ function ProductCamera() {
                                         key={index}
                                         src={item}
                                         alt="fpt telecom"
-                                        className={`h-[69px] cursor-pointer  rounded-md border-2  object-cover ${
+                                        className={`h-[46px] w-[46px] lg:h-[69px] lg:w-[69px] cursor-pointer  rounded-md border-2  object-cover ${
                                             numActive === index
                                                 ? "border-primary"
                                                 : "border-transparent"
