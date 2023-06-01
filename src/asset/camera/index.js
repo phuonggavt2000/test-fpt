@@ -39,6 +39,14 @@ const imgCam = {
     avt3: require("./avatar3.png"),
     avt4: require("./avatar4.png"),
     avt5: require("./avatar5.png"),
+    iq3: require("./IQ30.jpg"),
+    iq31: require("./IQ31.png"),
+    iq32: require("./IQ32.png"),
+    iq33: require("./IQ33.jpg"),
+    camPlay: require("./camPlay.jpg"),
+    camPlay2: require("./camPlay2.jpg"),
+    camPlay3: require("./camPlay3.jpg"),
+    camPlay4: require("./camPlay4.jpg"),
 };
 
 export default imgCam;

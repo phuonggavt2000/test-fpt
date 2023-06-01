@@ -4,6 +4,7 @@ import {
     cardCameras,
     featureCams,
     feedbackUser,
+    iclouds,
     infoCams,
     productCameras,
     suportCameras,
@@ -18,16 +19,43 @@ import PrevBanner from "../components/PrevBanner";
 import NextBanner from "../components/NextBanner";
 
 function ProductCamera() {
-    const nameProducts = ["Ngoài trời", "Trong nhà"];
+    const nameProducts = ["IQ 2S", "IQ 2", "IQ 3"];
     const priceCameras = [
         { main: "1.000.000đ", sub: "1.400.000đ" },
-        { main: "900.0000đ", sub: "1.300.000đ" },
+        { main: "900.000đ", sub: "1.300.000đ" },
+        { main: "1.890.000đ", sub: "2.500.000đ" },
     ];
 
     const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: <PrevBanner />,
+        nextArrow: <NextBanner />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+        ],
+    };
+    const settingIclouds = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: <PrevBanner />,
         nextArrow: <NextBanner />,
@@ -59,7 +87,6 @@ function ProductCamera() {
         <div className="lg:w-[1106px] w-full mx-auto lg:px-0 px-4">
             <div className="relative w-full mx-auto mt-4 z-[1]  rounded-lg bg-white lg:px-20 px-6 py-3  border-b-2 pb-2">
                 <div className="flex items-center border-b-2 lg:text-base text-sm">
-                    <span className="font-semibold px-4 "> FPT Camera</span>
                     {nameProducts.map((item, index) => (
                         <button
                             onClick={() => {
@@ -108,7 +135,7 @@ function ProductCamera() {
                                         key={index}
                                         src={item}
                                         alt="fpt telecom"
-                                        className={`h-[69px] cursor-pointer w-[69px] rounded-md border-2  object-cover ${
+                                        className={`h-[69px] cursor-pointer  rounded-md border-2  object-cover ${
                                             numActive === index
                                                 ? "border-primary"
                                                 : "border-transparent"
@@ -180,6 +207,50 @@ function ProductCamera() {
                 classPlus="bg-white px-0"
                 classContainer
             />
+            <div className="-mx-2">
+                <Slider {...settingIclouds}>
+                    {iclouds.map((item, index) => (
+                        <div key={index} className="px-2">
+                            <div
+                                className={`${item.border} flex flex-col justify-center items-center border-2 relative  rounded-lg mt-5`}
+                            >
+                                <div className="px-6">
+                                    {item.recommend && (
+                                        <img
+                                            src={item.recommend}
+                                            className="absolute -top-7 -right-5"
+                                            alt="fpt telecom"
+                                        />
+                                    )}
+
+                                    <img src={item.img} alt="fpt telecom" />
+                                    <div className="flex flex-col pb-4 font-semibold text-secondary">
+                                        {item.descs.map((item, index) => (
+                                            <span key={index}>{item}</span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div
+                                    className={`flex ${item.bg} px-6 py-2 w-full`}
+                                >
+                                    <div className="relative flex flex-col">
+                                        <span className="bg-white rounded-xl px-4 text-sm py-2 font-semibold my-auto">
+                                            Cloud/Camera
+                                        </span>
+                                    </div>
+
+                                    <div className="flex flex-col ml-auto font-semibold text-white text-lg">
+                                        <span>{item.price}</span>
+                                        <span>30 ngày</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+
             <div className="grid lg:grid-cols-4 grid-cols-2 gap-3 my-8">
                 {featureCams.map((item, index) => (
                     <div

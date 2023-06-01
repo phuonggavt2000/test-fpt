@@ -4,6 +4,7 @@ import imgProduct from "../asset/products";
 import img from "../asset/imgs/img";
 import { IoBusinessOutline } from "react-icons/io5";
 import imgCam from "../asset/camera";
+import imgs from "../asset/icloud";
 
 const {
     FaPen,
@@ -368,6 +369,7 @@ export const productCameras = [
     {
         imgs: [imgCam.iq2s1, imgCam.iq2s2, imgCam.iq2s3, imgCam.iq2s4],
         titleDecs: [
+            "Loại camera",
             "Độ phân giải",
             "Cảm biến",
             "Tầm nhìn xa hồng ngoại",
@@ -383,6 +385,7 @@ export const productCameras = [
             "Bảo hành",
         ],
         desc: [
+            "Ngoài trời",
             "Full HD - 1080p",
             '1/2.8" Sony',
             "15m - 20m",
@@ -401,6 +404,7 @@ export const productCameras = [
     {
         imgs: [imgCam.iq21, imgCam.iq22, imgCam.iq23, imgCam.iq24],
         titleDecs: [
+            "Loại camera",
             "Độ phân giải",
             "Cảm biến",
             "Tầm nhìn xa hồng ngoại",
@@ -416,6 +420,7 @@ export const productCameras = [
             "Hệ điều hành",
         ],
         desc: [
+            "Trong nhà",
             "Full HD - 1080p",
             '1/2.8" Sony',
             "8m - 10m",
@@ -429,6 +434,41 @@ export const productCameras = [
             "Camera an ninh, cảnh báo AI, không đàm thoại",
             "24 tháng, hỗ trợ CSKH 24/7",
             "Android, iOS, PC",
+        ],
+    },
+    {
+        imgs: [imgCam.iq3, imgCam.iq31, imgCam.iq32, imgCam.iq33],
+        titleDecs: [
+            "Loại camera",
+            "Độ phân giải",
+            "Cảm biến",
+            "Tầm nhìn xa hồng ngoại",
+            "Lưu trữ dữ liệu",
+            "Cân bằng ánh sáng",
+            "Độ nhạy sáng",
+            "Giảm nhiễm ánh sáng yếu",
+            "Điện áp đầu vào",
+            "Ống kính",
+            "Chuẩn chống nước",
+            "Kết nối",
+            "Chức năng",
+            "Bảo hành",
+        ],
+        desc: [
+            "Ngoài trời",
+            "Full HD - 1080p",
+            '1/2.8" Sony',
+            "15m - 20m",
+            "Lưu trữ điện đám mây (cloud)",
+            "WDR",
+            "0.028Lux @ (F2.0, AGC ON), 0 Lux with IR",
+            "2D NR  3D NR",
+            "12V - 1A",
+            "4.0 mm @F2.0 - góc nhìn 94°",
+            "IP66",
+            "LAN",
+            "Camera an ninh, cảnh báo AI, đàm thoại 2 chiều",
+            "24 tháng, hỗ trợ CSKH 24/7",
         ],
     },
 ];
@@ -714,6 +754,49 @@ export const infoCams = [
         title: "Nếu mất điện thì dữ liệu xem lại có bị mất không?",
         subTitle:
             "Không. Mất điện chỉ khiến camera ngừng hoạt động, không ghi được dữ liệu trong khoảng thời gian mất điện. Những dữ liệu đã được ghi trước đó không bị ảnh hưởng.",
+    },
+];
+
+export const iclouds = [
+    {
+        img: imgs.icloud1,
+        descs: [
+            "• Chất lượng Full HD",
+            "• 1 ngày lưu trữ toàn bộ",
+            "• Phát hiện người nhờ AI",
+            "• Miễn phí bảo trì",
+            "• Miễn phí bảo trì",
+        ],
+        price: "22.000đ",
+        border: "border-[#31b5ba]",
+        bg: "bg-[#31b5ba]",
+    },
+    {
+        img: imgs.icloud2,
+        descs: [
+            "• Chất lượng Full HD",
+            "• 3 ngày lưu trữ toàn bộ",
+            "• Phát hiện người nhờ AI",
+            "• Miễn phí bảo trì",
+            "• Miễn phí bảo trì",
+        ],
+        price: "44.000đ",
+        recommend: imgs.recommend,
+        border: "border-[#fb6e50]",
+        bg: "bg-[#fb6e50]",
+    },
+    {
+        img: imgs.icloud3,
+        descs: [
+            "• Chất lượng Full HD",
+            "• 7 ngày lưu trữ toàn bộ",
+            "• Phát hiện người nhờ AI",
+            "• Miễn phí bảo trì",
+            "• Miễn phí bảo trì",
+        ],
+        price: "99.000đ",
+        border: "border-[#0861bd]",
+        bg: "bg-[#0861bd]",
     },
 ];
 

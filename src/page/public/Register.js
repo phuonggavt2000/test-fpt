@@ -39,11 +39,12 @@ function Register({
                 }
             );
     };
+    console.log(" form.current,:", form.current);
 
     return (
         <div
             className={` flex  ${
-                classContainer ? "px-0" : "px-4 pt-[50px]"
+                classContainer ? "px-4" : "px-4 pt-[50px]"
             } lg:pt-[70px]  flex-col`}
         >
             {/* <RegisterPackage /> */}
@@ -97,7 +98,7 @@ function Register({
                             </label>
                             <input
                                 required
-                                placeholder="31 Lê Văn Quới, Q.Bình Tân, HCM"
+                                placeholder="Tên Đường, Quận/Huyện, Thành Phố"
                                 type="text"
                                 id="address"
                                 value={address}
@@ -156,6 +157,37 @@ function Register({
                                 <option>Camera trong nhà</option>
                                 <option>Camera ngoài trời</option>
                             </select>
+                        </div>
+                        <div className="flex mt-2 flex-col col-span-2">
+                            <p className="uppercase text-[#767676] text-xs font-semibold">
+                                Quà tặng
+                            </p>
+                            <div className="flex mt-2 w-full items-center">
+                                <div className="w-1/2 flex items-center">
+                                    <input
+                                        type="radio"
+                                        id="hat"
+                                        name="gift"
+                                        value="nón bảo hiểm"
+                                        className="mr-2"
+                                        required
+                                    />
+                                    <label htmlFor="hat">Mũ bảo hiểm</label>
+                                </div>
+
+                                <div className="w-1/2 flex items-center">
+                                    <input
+                                        type="radio"
+                                        id="bottle"
+                                        name="gift"
+                                        value="bình giữ nhiệt"
+                                        className="mr-2"
+                                    />
+                                    <label htmlFor="bottle">
+                                        Bình giữ nhiệt
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         {isLoading ? (
                             <button
