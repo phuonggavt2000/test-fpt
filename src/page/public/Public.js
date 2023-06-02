@@ -27,7 +27,7 @@ function Public() {
 
             <div className="fixed bottom-[4%] right-[1%] flex flex-col gap-y-4 text-white z-50">
                 <Link
-                    to="https://zalo.me/0939834623"
+                    to="https://zalo.me/0375956703"
                     target="_blank"
                     className="bg-[#0057ff] p-3 rounded-full text-3xl "
                 >
@@ -38,7 +38,7 @@ function Public() {
                     />
                 </Link>
                 <Link
-                    to="tel:0939834623"
+                    to="tel:0375956703"
                     className="bg-[#00d574] p-3 rounded-full text-3xl"
                 >
                     <BsFillTelephoneFill />

@@ -57,10 +57,10 @@ function Footer() {
                             <span>
                                 Số điện thoại liên hệ:{" "}
                                 <a
-                                    href="tel:0939834623"
+                                    href="tel:0375956703"
                                     className="hover:text-[#ff701d]"
                                 >
-                                    0939.834.623
+                                    0375.956.703
                                 </a>
                             </span>
                             <Link

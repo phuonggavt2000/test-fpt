@@ -87,7 +87,7 @@ function ProductCamera() {
     return (
         <div className="lg:w-[1106px] w-full mx-auto lg:px-0 px-4">
             <div className="relative w-full mx-auto mt-4 z-[1]  rounded-lg bg-white lg:px-20 px-6 py-3  border-b-2 pb-2">
-                <div className="flex items-center border-b-2 lg:text-base text-sm">
+                <div className="flex items-center border-b-2 lg:text-base text-sm whitespace-nowrap">
                     {nameProducts.map((item, index) => (
                         <button
                             onClick={() => {
@@ -195,10 +195,10 @@ function ProductCamera() {
                     </div>
                     <div className="lg:w-1/2 w-full flex lg:justify-end">
                         <Link
-                            to={`tel:0939834623`}
+                            to={`tel:0375956703`}
                             className="ml-auto w-full flex whitespace-nowrap justify-center items-center  h-[48px] bg-primary text-white rounded-lg font-semibold hover:text-primary hover:bg-[#ff894033] border-primary border"
                         >
-                            Hotline: 0939 834 623
+                            Hotline: 0375956703
                         </Link>
                     </div>
                 </div>
@@ -207,6 +207,7 @@ function ProductCamera() {
                 options="Camera trong nhà"
                 classPlus="bg-white px-0"
                 classContainer
+                camera
             />
             <div className="-mx-2">
                 <Slider {...settingIclouds}>

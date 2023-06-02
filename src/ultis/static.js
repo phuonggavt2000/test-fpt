@@ -77,18 +77,18 @@ export const underBanners = [
         to: "dang-ky-fpt",
     },
     {
-        title: "0939 834 623",
+        title: "0375 956 703",
         icon: <BsFillTelephoneFill className="text-white" />,
         bg: "bg-[#ff701d]",
         hover: "hover:text-[#ff701d]",
-        to: "tel:0939834623",
+        to: "tel:0375956703",
     },
     {
         title: "Liên lạc",
         icon: <BsMessenger className="text-white" />,
         bg: "bg-[#00d574]",
         hover: "hover:text-[#00d574]",
-        to: "https://www.messenger.com/t/100014834612855",
+        to: "https://www.messenger.com/t/108503272047244",
     },
 ];
 
@@ -604,8 +604,8 @@ export const registerNow = [
     },
     {
         img: img.hotline,
-        title: "Hotline 0939 834 623",
-        to: "tel:0939834623",
+        title: "Hotline 0375 956 703",
+        to: "tel:0375956703",
         color: "text-[#fd6436]",
     },
     {

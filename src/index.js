@@ -10,7 +10,7 @@ import TagManager from "react-gtm-module";
 
 const { store } = reduxConfig();
 const tagManagerArgs = {
-    gtmId: "GTM-5NPTRTP",
+    gtmId: "GTM-T57TBCS",
 };
 
 TagManager.initialize(tagManagerArgs);

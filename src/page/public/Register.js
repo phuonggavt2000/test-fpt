@@ -8,6 +8,7 @@ function Register({
     classPlus = "bg-white",
     classContainer = "",
     options = "Internet FPT",
+    camera,
 }) {
     const { MdInfoOutline, AiOutlineLoading3Quarters } = icons;
     const navigate = useNavigate();
@@ -24,10 +25,10 @@ function Register({
         setIsLoading(true);
         emailjs
             .sendForm(
-                "service_gyyj3zi",
-                "template_vteo7bk",
+                "service_thnnwrx",
+                "template_yw2bfl7",
                 form.current,
-                "yr4jowLRUuaj855kg"
+                "uRbsevw3iRyxpsOhh"
             )
             .then(
                 () => {
@@ -39,13 +40,12 @@ function Register({
                 }
             );
     };
-    console.log(" form.current,:", form.current);
 
     return (
         <div
-            className={` flex  ${
-                classContainer ? "px-4" : "px-4 pt-[50px]"
-            } lg:pt-[70px]  flex-col`}
+            className={` flex lg:pt-[70px]  flex-col  ${
+                camera ? "px-0" : classContainer ? "px-4" : "px-4 pt-[50px]"
+            }`}
         >
             {/* <RegisterPackage /> */}
             <div
@@ -121,7 +121,7 @@ function Register({
                             </label>
                             <input
                                 required
-                                placeholder="0939834623"
+                                placeholder="0375956703"
                                 type="number"
                                 id="phone"
                                 value={phone}

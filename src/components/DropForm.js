@@ -17,10 +17,10 @@ function DropForm({ toggleForm }) {
         setIsLoading(true);
         emailjs
             .sendForm(
-                "service_gyyj3zi",
-                "template_vteo7bk",
+                "service_thnnwrx",
+                "template_yw2bfl7",
                 form.current,
-                "yr4jowLRUuaj855kg"
+                "uRbsevw3iRyxpsOhh"
             )
             .then(
                 () => {
@@ -62,21 +62,24 @@ function DropForm({ toggleForm }) {
                     </button>
                     <div className="grid grid-cols-2 gap-4">
                         <div className="lg:col-span-1 col-span-2">
-                            <label className="uppercase text lg:pb-2 pb-1 text-[#767676] text text-xs font-semibold flex items-center">
+                            <label
+                                htmlFor="nameF"
+                                className="uppercase text lg:pb-2 pb-1 text-[#767676] text text-xs font-semibold flex items-center"
+                            >
                                 Họ và tên
                             </label>
                             <input
                                 required
                                 placeholder="Nguyễn Văn A"
                                 type="text"
-                                id="name"
+                                id="nameF"
                                 name="user_name"
                                 className="bg-[#DDE6ED] py-2 px-4 rounded-lg outline-none w-full"
                             />
                         </div>
                         <div className="lg:col-span-1 col-span-2">
                             <label
-                                htmlFor="phone"
+                                htmlFor="phoneF"
                                 className="uppercase text lg:pb-2 pb-1 text-[#767676] text text-xs font-semibold flex items-center"
                             >
                                 Số Điện Thoại
@@ -85,14 +88,14 @@ function DropForm({ toggleForm }) {
                                 required
                                 placeholder="0375956703"
                                 type="phone"
-                                id="phone"
+                                id="phoneF"
                                 name="phone"
                                 className="bg-[#DDE6ED] py-2 px-4 rounded-lg outline-none w-full"
                             />
                         </div>
                         <div className="col-span-2">
                             <label
-                                htmlFor="address"
+                                htmlFor="addressF"
                                 className="uppercase text lg:pb-2 pb-1 text-[#767676] text text-xs font-semibold flex items-center"
                             >
                                 Địa Chỉ
@@ -101,7 +104,7 @@ function DropForm({ toggleForm }) {
                                 required
                                 placeholder="Tên Đường, Quận/Huyện, Thành Phố"
                                 type="text"
-                                id="addresss"
+                                id="addressF"
                                 name="address"
                                 className="bg-[#DDE6ED] py-2 px-4 rounded-lg outline-none w-full"
                             />
